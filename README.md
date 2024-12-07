@@ -32,23 +32,23 @@ For the "BEFORE" metrics, all resources were originally deployed, exposed to the
 For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
 
 ## Attack Maps Before Hardening / Security Controls
-![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
-![Linux Syslog Auth Failures](https://i.imgur.com/G1YgZt6.png)<br>
-![Windows RDP/SMB Auth Failures](https://i.imgur.com/ESr9Dlv.png)<br>
+![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png](https://imgur.com/2LLa4KH))<br>
+![Linux Syslog Auth Failures](https://i.imgur.com/G1YgZt6.png](https://imgur.com/20LCB72))<br>
+![Windows RDP/SMB Auth Failures](https://i.imgur.com/ESr9Dlv.png](https://imgur.com/b7BIO9F))<br>
 
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2023-03-15 17:04:29
-Stop Time 2023-03-16 17:04:29
+2024-10-21T09:04:47.0329671Z
+2024-10-22T09:04:47.0329671Z
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 19470
-| Syslog                   | 3028
+| SecurityEvent            | 83662
+| Syslog                   | 7594
 | SecurityAlert            | 10
-| SecurityIncident         | 348
-| AzureNetworkAnalytics_CL | 843
+| SecurityIncident         | 289
+| AzureNetworkAnalytics_CL | 4852
 
 ## Attack Maps Before Hardening / Security Controls
 
@@ -57,13 +57,13 @@ Stop Time 2023-03-16 17:04:29
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-Start Time 2023-03-18 15:37
-Stop Time	2023-03-19 15:37
+2024-10-23T10:20:20.0903894Z
+2024-10-24T10:20:20.0903894Z
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 8778
-| Syslog                   | 25
+| SecurityEvent            | 30703
+| Syslog                   | 12
 | SecurityAlert            | 0
 | SecurityIncident         | 0
 | AzureNetworkAnalytics_CL | 0
